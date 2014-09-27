@@ -1,0 +1,406 @@
+/*body{
+font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+p, h1, form, button{border:0; margin:0; padding:0;}
+.spacer{clear:both; height:1px;}
+ ----------- My Form ----------- 
+.utilityform{
+margin:0 auto;
+width:700px;
+padding:14px;
+}
+
+
+
+ ----------- stylized ----------- 
+.utilityform{
+border:solid 2px #b7ddf2;
+background:#ebf4fb;
+}
+.utilityform h1 {
+font-size:14px;
+font-weight:bold;
+margin-bottom:8px;
+}
+.utilityform p{
+font-size:11px;
+color:#666666;
+margin-bottom:20px;
+border-bottom:solid 1px #b7ddf2;
+padding-bottom:10px;
+}
+.utilityform label{
+display:block;
+font-weight:bold;
+text-align:right;
+width:140px;
+float:left;
+padding-right: 1em;
+font-size:14px;
+}
+.utilityform .small{
+color:#666666;
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:140px;
+}
+.utilityform input{
+float:left;
+font-size:14px;
+
+border:solid 1px #aacfe4;
+width:9em;
+
+}
+.utilityform button{
+clear:both;
+margin-left:50px;
+width:125px;
+height:15px;
+background:#666666 url(img/button.png) no-repeat;
+text-align:center;
+line-height:15px;
+color:#FFFFFF;
+font-size:7px;
+font-weight:bold;
+}
+.column {
+    float:left;
+    width:325px;
+}
+
+.row {
+    clear:both;
+    padding:1em;
+    width:650px;
+}
+
+.utilityform select{
+    font-size:14px;
+    width:125px;
+    vertical-align:top
+}*/
+
+html {height:100%;overflow-x: hidden;}
+body { font-size: 62.5%; height:100%;}
+label, input { display:inline; }
+input.text { margin-bottom:12px; width:95%; padding: .4em; }
+fieldset { padding:0; border:0; margin-top:25px; }
+h1 { font-size: 1.2em; margin: 1em 0; padding-left:2em;}
+div#users-contain { width: 350px; margin: 20px 0; }
+div#users-contain table { margin: 1em 0; border-collapse: collapse; width: 100%; }
+div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
+.ui-dialog .ui-state-error { padding: .3em; }
+.shopifine-ui-dialog 
+{
+ margin: 0 auto;
+ overflow: hidden;
+padding: 1em;
+/*left: 5em;*/
+position: relative;
+}
+.ui-dialog-medium {
+    width:80%;
+}
+.ui-dialog-small{
+    width:70%;
+}
+.ui-dialog-extra-small{
+    width:50%;
+}
+.ui-dialog-extra-wide{
+    width:95%;
+}
+
+.ui-dialog-nested{
+    width:39%;
+    display:inline-block;
+    height:auto;
+    margin:1%;
+}
+.validateTips { border: 1px solid transparent; padding: 0.3em; }
+.reqBarcodeAC { position:relative;left:25px;}
+* { font-family: Verdana; font-size: 98%; }
+em {color:red;}
+.shopifine-ui-button{width:150px;float:right}
+.shopifine-ui-widget-content{background: url("images/ui-bg_inset-hard_100_fcfdfd_1x100.png") repeat-x scroll 50% bottom #FCFDFD;
+    border-bottom: 1px solid #A6C9E2;
+    color: #222222;
+}
+.shopifine-ui-dialog-buttonset {
+    margin: 1em;
+    padding-bottom: 3em;
+}
+label { width: 11em; float: left; }
+label.error { float: right; color: red; padding-left: .5em; vertical-align: top; position: relative;width:8em;margin-right:.5em;}
+p , .column{ float:left; padding: 1em 1em 3em 2em;width:310px}
+
+.submit { margin-left: 12em; }
+em { font-weight: bold; padding-right: 1em; vertical-align: top; }
+
+.ui-combobox {
+    position: relative;
+    display: inline-block;
+}
+.ui-combobox-toggle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+    padding: 0;
+
+}
+.ui-combobox-input {
+    margin: 0;
+    padding: 0.3em;
+}   
+
+.form-container {
+    border: 1px solid #A6C9E2;
+    color: #222222;
+}
+
+.tab-container {
+   height:60%;
+}
+
+
+
+.table-grid {
+    height: 60%;
+    clear:both;
+}
+
+.row {clear:both}
+.ui-tabs{height:80%;width:60%;left:20%;margin-top:2%;}
+/*single column layout */
+
+.single-column-row{clear:none;margin-left:2em;}
+.single-column {         
+    padding-bottom: 0.5em;     
+    width:95%;
+}
+.single-column-form {width:60%;position: relative;margin:0 auto}
+ /* end single column layout */
+.field {width:95%;}
+.shopifine-ui-icon-link{position:absolute;}
+
+.ui-widget-header{height:18px;}
+
+#status-message{height: 35px;
+    margin: 20px;
+    padding: 0 0.7em;
+    position: relative;
+    width: auto;}
+p {width:auto;}
+
+.logo {
+    display: block; height: 100%; position: relative; background: url("../images/menubar/logo.png") no-repeat;
+}
+
+.search-field input {
+    height:20px;
+}
+.shopifine-tree {
+    display: inline-block;
+}
+
+#jMenu li a{
+    text-decoration: none;
+    font-weight: bold;
+}
+    
+.sf-menu li ul li a {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    font-size: 10px;
+    padding: 7px;
+    text-transform: none;
+}
+
+
+
+.sf-menu li ul li {
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    padding: 0;
+    width: 14em;
+}
+
+
+.sf-menu li {
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: table-cell;
+    float: left;
+    margin-right: 2px;
+}
+.sf-menu li a {
+    
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 10px;
+    padding: 10px 15px 10px 10px;
+    text-transform: uppercase;
+}
+.sf-menu li a:hover {
+    background-color: #333232;
+}
+
+.sf-menu li ul li a:hover {
+    background-color: #333232;
+}
+
+.sf-menu li a:active {
+    background-color: black;
+}
+.sf-menu li ul {
+        margin-top: 10px;
+    padding: 0;
+    
+}
+
+.sf-menu a, .sf-menu a:visited {
+    color: white;
+}
+
+.sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:active {
+    background: black;
+    outline: 0 none;
+}
+
+.sf-sub-indicator {
+    right: 0.2em;
+}
+
+/* jqgrid*/
+
+.ui-pg-input {
+    height:20px;
+}
+
+.settings-icon {
+    background: url("../images/settings.png") no-repeat scroll 2px 8px transparent;
+}
+
+.ui-jqgrid {
+    margin: 0 auto;
+}
+
+/* end */
+
+/* ui combo box */
+    .ui-combobox {
+        position: relative;
+        display: inline-block;
+        width:65%;
+    }
+    .ui-combobox-toggle {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-left: -1px;
+        padding: 0;
+
+    }
+    .ui-combobox-input {
+        margin: 0;
+        padding: 0.3em;
+    }  
+/* end */
+
+
+
+
+
+
+/*label { width: 10em; float: left; }*/
+/*label.error { float: right; color: red; padding-left: .5em; vertical-align: top; position: relative;width:130px;}*/
+p { clear: both; padding: 1em; }
+.submit { margin-left: 12em; }
+em { font-weight: bold; padding-right: 1em; vertical-align: top; }
+
+.content-area-extra-wide {
+    width:100%;
+}
+
+.button-content-dashboard{
+    float: right;
+    height: 40px;
+    padding-top: 5px;
+}
+
+h3 {
+    
+    margin: 1em 0;
+    padding-left: 4em;
+}
+
+            .labeldiv-edit {
+                color: #2E6E9E;
+                float: left;
+                font-size: 110%;
+                font-weight: bold;
+                margin-right: .5em;
+                width: 30%;
+                word-wrap: break-word;
+            }
+            .valuediv {
+                float: left;
+                font-weight: bold;
+                width: 45%;
+                word-wrap: break-word;
+            }
+/*            label.error {
+                width:8em ;
+                margin-right: 0;
+            }*/
+            #status-message-li{
+                color: red;
+                font-size: 110%;
+                font-style: italic;
+                margin: 0 auto;
+                width: 80%;
+            }
+            
+            .help-message-left{
+                color: green;
+                font-size: 90%;
+                font-style: italic;
+                margin: 0 auto;
+                width: 90%;
+                float:left
+            }
+        .labeldiv {
+            color: #2E6E9E;
+            float: left;
+            font-size: 110%;
+            font-weight: bold;
+            margin-right: .5em;
+            width: 25%;
+            word-wrap: break-word;
+        }
+        .valuediv {
+            float: left;
+            font-weight: bold;
+            width: 45%;
+            word-wrap: break-word;
+        }
+         .help-message {
+            color: green;
+            float: right;
+            font-size: 90%;
+            font-style: italic;
+            width: 65%;
+        }
+        .inithide{
+            display:none;
+        }

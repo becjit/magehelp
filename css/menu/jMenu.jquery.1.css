@@ -1,0 +1,59 @@
+
+#jMenu {
+    display: table;
+    margin: 0;
+    padding: 0;
+}
+#jMenu li {
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: table-cell;
+    float: left;
+    margin-right: 2px;
+}
+#jMenu li a {
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+#jMenu li a:hover {
+    background-color: #333232;
+}
+#jMenu li ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+#jMenu li ul li {
+    background-color: #333232;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    padding: 0;
+}
+#jMenu li ul li.arrow {
+    background: url("../arrow_down.png") no-repeat scroll center center #322F32;
+    border-bottom: medium none;
+    height: 6px;
+    padding: 0 0 10px;
+}
+#jMenu li ul li a {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    font-size: 10px;
+    padding: 7px;
+    text-transform: none;
+}
+#jMenu li ul li a.isParent {
+    background: url("../arrow_right.png") no-repeat scroll right center #3A3A3A;
+}
+#jMenu li ul li a:hover {
+    background-color: black;
+}
